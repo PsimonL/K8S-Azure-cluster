@@ -12,7 +12,7 @@
 - There are also usefull scripts in Bash and Python.
 
 ### 2. The Cloud-based equivalent of local cluster:
-- 
+- Terraform
 
 ## Helpful resources:
 - a
