@@ -5,7 +5,6 @@
   become_method: sudo
   tasks:
 
-# Installing packages: docker-ce, docker-ce-cli, containerd.io and then adding a user named “vagrant” to the “docker” group.
   - name: Install packages that allow apt to be used over HTTPS
     apt:
       name: "{{ packages }}"
@@ -38,7 +37,7 @@
       packages:
       - docker-ce 
       - docker-ce-cli 
-      - containerd.io # Container manager
+      - containerd.io
     notify:
       - docker status
 
@@ -47,7 +46,6 @@
       name: vagrant
       group: docker
 
-# Kubelet will not start if the system has swap enabled, so we are disabling swap using the below code.
   - name: Remove swapfile from /etc/fstab
     mount:
       name: "{{ item }}"
@@ -61,7 +59,6 @@
     command: swapoff -a
     when: ansible_swaptotal_mb > 0      
 
-# Step 2.3: Installing kubelet, kubeadm and kubectl for managing k8s cluster.
   - name: Add an apt signing key for Kubernetes
     apt_key:
       url: https://packages.cloud.google.com/apt/doc/apt-key.gpg
@@ -84,7 +81,6 @@
         - kubeadm 
         - kubectl
 
-# Adding line with node IP to /etc/default/kubelet
   - name: Configure IP of node
     lineinfile:
       create: yes
@@ -97,32 +93,18 @@
       daemon_reload: yes
       state: restarted
 
-  - name: Fix cgroup issue
-    # https://stackoverflow.com/questions/52119985/kubeadm-init-shows-kubelet-isnt-running-or-healthy
-    copy:
-      content: |
-        {
-          "exec-opts": ["native.cgroupdriver=systemd"]
-        }
-      dest: /etc/docker/daemon.json
-
   - name: Restart docker
     service:
       name: docker
       daemon_reload: yes
       state: restarted
 
-  # - name: Create Containerd directory
-  #   command: mkdir -p /etc/containerd
   - name: Ensure /etc/containerd directory exists
     become: true
     file:
       path: /etc/containerd
       state: directory
 
-  # Generate default config and stream to /etc/containerd/config.toml
-  # - name: Create Config
-  #   command: sh -c "containerd config default > /etc/containerd/config.toml"
   - name: Generate and place default config
     become: true
     command: containerd config default
@@ -133,20 +115,17 @@
       content: "{{ containerd_config_output.stdout }}"
       dest: /etc/containerd/config.toml
 
-# Restart Docker nad k8s
   - name: Restart containerd
     service:
       name: containerd
       daemon_reload: yes
       state: restarted
-      
-# ======================================================================================
+
   - name: Copy the join command to server location
     copy: src=join-command dest=/tmp/join-command.sh mode=0777
 
   - name: Join the node to cluster
     command: sh /tmp/join-command.sh
-# ======================================================================================
 
   handlers:
     - name: docker status

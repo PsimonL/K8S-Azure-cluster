@@ -1,11 +1,3 @@
-# =========================================================================================================================================================================
-# UWAGA!:
-# Plik Terraform w przypadku konfiguracji lokalnej klastra k8s na maszynach wirtualnych hostowanych na typowym hypervisorze, takim jak VirtualBox, VMWare, czy Hyper-V powiniene
-# zostać uruchomiony na nodzie master klastra Kubernetes.
-# =========================================================================================================================================================================
-
-
-
 terraform {
 
   required_version = ">=1.5.5"
