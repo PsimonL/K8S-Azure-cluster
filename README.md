@@ -2,7 +2,8 @@
 
 ## Project contains two folders:
 1. local-cluster ---> Is based on local cluster infrastructure, based on hypervisor like Virtual Box, of course used K8S, Docker, Ansible, and tools from Hashicorp like Vagrant and Terraform.
-2*. AWS-cluster ---> Is based on Amazon Web Service as part of AWS Academy and access was granted by my university and faculty. Could be also used other provider like GCP or Azure. 
+2*. AWS-cluster ---> Is based on Amazon Web Service as part of AWS Academy and access was granted by my university and faculty. Could be also used other provider like GCP or Azure.
+Cloud provider is available at: https://github.com/PsimonL/K8S-AWS-cluster 
 
 ### The local cluster description:  
 I've used VirtualBox as my hypervisor, but analogically VMWare, Hyper-V should also work as well.  
