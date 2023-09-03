@@ -13,6 +13,8 @@ I've used VirtualBox as my hypervisor, but analogically VMWare, Hyper-V should a
 - To play with Kubernetes I've used Terraform and classic yaml files for example for deployments, scalling, etc.
 - There are also usefull scripts in Bash and Python.
 
+#### TODO:
+Finish deployments and strictly cluster side, with Ingress, Services, Security stuff etc.
 
 ## Helpful resources and links:
 - [link-1](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs)
