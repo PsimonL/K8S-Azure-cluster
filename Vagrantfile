@@ -15,21 +15,14 @@ RANGE_IP = "192.168.56"
 
 Vagrant.configure("2") do |config|
   config.ssh.insert_key = false
-  config.vm.synced_folder ".", "/vagrant", owner: "vagrant", group: "vagrant"
+  config.vm.synced_folder ".", "/vagrant", type: "virtualbox", owner: "vagrant", group: "vagrant"
 
   (1..NUM_MASTERS).each do |i|
       config.vm.define "k8s-master" do |master|
         master.vm.box = UBUNTU_BOX
         
-        # master.vm.network "private_network", type: "dhcp", virtualbox__intnet: "VirtualBox Host-Only Ethernet Adapter", 
         master.vm.network "private_network", ip: "#{RANGE_IP}.#{i + 180}"
         master.vm.hostname = "#{MASTER_NAME}-#{i + 180}"
-        
-        # config.vm.provider "virtualbox" do |vb|
-        #   vb.name = "#{MASTER_NAME}-#{i + 180}"
-        #   vb.memory = 2048
-        #   vb.cpus = 2
-        # end
 
         master.vm.provider :virtualbox do |vb|
           vb.name = "#{MASTER_NAME}-#{i + 180}"
@@ -65,6 +58,7 @@ Vagrant.configure("2") do |config|
           ansible.version = "latest"
           ansible.extra_vars = {
             master_node_ip: "#{RANGE_IP}.#{i + 180}",
+            worker_node_name: "#{WORKER_NAME}-#{i + 200}",
         }
       end
     end
@@ -75,7 +69,6 @@ Vagrant.configure("2") do |config|
     config.vm.define "k8s-worker-#{i}" do |worker|
     worker.vm.box = UBUNTU_BOX
 
-        # worker.vm.network "private_network", type: "dhcp", virtualbox__intnet: "VirtualBox Host-Only Ethernet Adapter"
         worker.vm.network "private_network", ip: "#{RANGE_IP}.#{i + 200}"
         worker.vm.hostname = "#{WORKER_NAME}-#{i + 200}"
         
@@ -86,11 +79,6 @@ Vagrant.configure("2") do |config|
         end
 
         worker.vm.provision "shell", inline: <<-SHELL
-          # sudo dnf update
-          # sudo dnf install -y python3
-          # sudo dnf install -y python3-pip
-          # sudo dnf update
-
           sudo apt-get update
           sudo apt install python3
           sudo apt-get -y install python3-pip
@@ -100,9 +88,11 @@ Vagrant.configure("2") do |config|
             ansible.playbook = "worker-playbook.yml"
             ansible.extra_vars = {
                 worker_node_ip: "#{RANGE_IP}.#{i + 200}",
+                worker_node_name: "#{WORKER_NAME}-#{i + 200}",
             }
         end
     end
   end
+
 
 end
