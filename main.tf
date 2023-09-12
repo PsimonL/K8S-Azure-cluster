@@ -17,3 +17,12 @@ provider "azurerm" {
   features {}
 }
 
+module "cluster" {
+  source = "./cluster"
+  serviceprinciple_id = var.serviceprinciple_id
+  serviceprinciple_key = var.serviceprinciple_key
+  ssh_key = var.ssh_key
+  location = var.location
+  kubernetes_version = var.kubernetes_version
+}
+
