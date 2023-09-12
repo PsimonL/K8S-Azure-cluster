@@ -7,3 +7,6 @@ https://www.youtube.com/watch?v=nIIxexG7_a8&list=PLiMWaCMwGJXkeBzos8QuUxiYT6j8JY
 
 Azure:
 https://www.youtube.com/watch?v=bHjS4xqwc9A
+https://learn.microsoft.com/en-us/azure/aks/learn/quick-kubernetes-deploy-terraform?tabs=azure-cli
+https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/kubernetes_cluster
+https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/guides/azure_cli
