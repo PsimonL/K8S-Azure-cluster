@@ -1,3 +1,8 @@
+# File driver which ties up whole configuration
+
+
+# TODO: to finish config, to implement: Ingress, Load Balancer and simple app like Nginx server
+
 terraform {
   version = "1.5.7"
   required_providers {
