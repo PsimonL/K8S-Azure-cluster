@@ -17,11 +17,11 @@ I've used VirtualBox as my hypervisor, but analogically VMWare, Hyper-V should a
 Finish deployments and strictly cluster side, with Ingress, Services, Security stuff etc.
 
 ## Helpful resources and links:
-- [link-1](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs)
-- [link-2](https://security.padok.fr/en/blog/role-based-access-kubernetes)
-- [link-3](https://developer.hashicorp.com/vagrant/docs/synced-folders/basic_usage)
-- [link-4](https://security.padok.fr/en/blog/role-based-access-kubernetes)
-- [link-5](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/#pod-network)
+- [https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs)
+- [https://security.padok.fr/en/blog/role-based-access-kubernetes](https://security.padok.fr/en/blog/role-based-access-kubernetes)
+- [https://developer.hashicorp.com/vagrant/docs/synced-folders/basic_usage](https://developer.hashicorp.com/vagrant/docs/synced-folders/basic_usage)
+- [https://security.padok.fr/en/blog/role-based-access-kubernetes](https://security.padok.fr/en/blog/role-based-access-kubernetes)
+- [https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/#pod-network](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/#pod-network)
 - [link-6](https://kubernetes.io/docs/reference/labels-annotations-taints/)
 - [link-7](https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet/)
 - [link-8](https://kubernetes.io/docs/tasks/administer-cluster/migrating-from-dockershim/change-runtime-containerd/)
