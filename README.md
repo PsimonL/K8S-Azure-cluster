@@ -14,7 +14,7 @@ I've used VirtualBox as my hypervisor, but analogically VMWare, Hyper-V should a
 - There are also usefull scripts in Bash and Python.
 
 #### TODO:
-Finish deployments and strictly cluster side, with Ingress, Services, Security stuff etc.
+Finish deployments and strictly cluster side, with Ingress, Services, Security stuff etc. Also add simple app deployment like Nginx server just to test the monitor of the cluster work itself.
 
 ## Helpful resources and links:
 - [https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs)
