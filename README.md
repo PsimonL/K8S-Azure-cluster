@@ -3,7 +3,8 @@
 ## Project contains two folders:
 1. local-cluster ---> Is based on local cluster infrastructure, based on hypervisor like Virtual Box, of course used K8S, Docker, Ansible, and tools from Hashicorp like Vagrant and Terraform.  
 2. Azure/AWS-cluster ---> Based on Azure Cloud or AWS Cloud - access granted by unversity and faculty. 
-Cloud provider is available at: https://github.com/PsimonL/K8S-AWS-cluster   
+Cloud provider is available at: https://github.com/PsimonL/K8S-AWS-cluster     
+Azure Cloud have been picked finally, cause AWS student account run out of licence time.
 
 ### The local cluster description:  
 I've used VirtualBox as my hypervisor, but analogically VMWare, Hyper-V should also work as well.  
