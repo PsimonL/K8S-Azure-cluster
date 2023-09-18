@@ -17,6 +17,7 @@
 - https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/guides/azure_cli
 
 
+*AWS become not available because student account granted by university run out of license validity period.*
 ### AWS:
 - https://www.youtube.com/watch?v=p6xDCz00TxU
 - https://www.youtube.com/watch?v=LhAyqaZwYKE
