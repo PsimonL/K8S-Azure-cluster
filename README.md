@@ -47,3 +47,5 @@ Finish deployments and strictly cluster side, with Ingress, Services, Security s
 - [https://grafana.com/docs/loki/latest/send-data/promtail/](https://grafana.com/docs/loki/latest/send-data/promtail/)
 - [https://docs.ansible.com/](https://docs.ansible.com/)
 - [https://www.proxmox.com/en/downloads](https://www.proxmox.com/en/downloads)
+- [https://www.velia.net/shop/region/strasbourg](https://www.velia.net/shop/region/strasbourg)
+- [https://www.openstack.org/](https://www.openstack.org/)
