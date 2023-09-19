@@ -39,3 +39,6 @@ Finish deployments and strictly cluster side, with Ingress, Services, Security s
 - [(https://www.tecmint.com/deploy-nginx-on-a-kubernetes-cluster/](https://www.tecmint.com/deploy-nginx-on-a-kubernetes-cluster/)
 - [https://computingforgeeks.com/deploy-kubernetes-cluster-using-vagrant-terraform/?expand_article=1#google_vignette](https://computingforgeeks.com/deploy-kubernetes-cluster-using-vagrant-terraform/?expand_article=1#google_vignette)
 - [https://docs.ansible.com/](https://docs.ansible.com/)
+- [https://kubernetes.io/docs/concepts/scheduling-eviction/](https://kubernetes.io/docs/concepts/scheduling-eviction/)
+- [https://docs.nginx.com/nginx-ingress-controller/installation/installation-with-helm/](https://docs.nginx.com/nginx-ingress-controller/installation/installation-with-helm/)
+- [https://grafana.com/docs/loki/latest/installation/docker/](https://grafana.com/docs/loki/latest/installation/docker/)
