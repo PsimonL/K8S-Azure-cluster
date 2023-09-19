@@ -2,16 +2,28 @@
 ## Overview
 
 ### Steps:
-1.
+1. 
 2.
 3.
 4.
 5.
 
 ### Description
+cluster_setup and ontop_setup are child modules
+
 
 
 ## Resources and materials used for each cloud provider:
+### Terraform tutorials which I based cluster on:
+- https://developer.hashicorp.com/terraform?product_intent=terraform
+- https://www.youtube.com/watch?v=l5k1ai_GBDE
+- https://www.youtube.com/watch?v=GSXx8AZjKK4
+- https://www.youtube.com/watch?v=SPcwo0Gq9T8
+- https://www.youtube.com/watch?v=7xngnjfIlK4
+- https://www.youtube.com/watch?v=SLB_c_ayRMo
+- https://www.youtube.com/watch?v=bHjS4xqwc9A
+
+
 ### Azure:
 - https://www.youtube.com/watch?v=bHjS4xqwc9A
 - https://learn.microsoft.com/en-us/azure/aks/learn/quick-kubernetes-deploy-terraform?tabs=azure-cli
