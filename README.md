@@ -42,3 +42,8 @@ Finish deployments and strictly cluster side, with Ingress, Services, Security s
 - [https://kubernetes.io/docs/concepts/scheduling-eviction/](https://kubernetes.io/docs/concepts/scheduling-eviction/)
 - [https://docs.nginx.com/nginx-ingress-controller/installation/installation-with-helm/](https://docs.nginx.com/nginx-ingress-controller/installation/installation-with-helm/)
 - [https://grafana.com/docs/loki/latest/installation/docker/](https://grafana.com/docs/loki/latest/installation/docker/)
+- [https://grafana.com/docs/loki/latest/installation/](https://grafana.com/docs/loki/latest/installation/)
+- [https://grafana.com/docs/grafana/latest/setup-grafana/installation/redhat-rhel-fedora/](https://grafana.com/docs/grafana/latest/setup-grafana/installation/redhat-rhel-fedora/)
+- [https://grafana.com/docs/loki/latest/send-data/promtail/](https://grafana.com/docs/loki/latest/send-data/promtail/)
+- [https://docs.ansible.com/](https://docs.ansible.com/)
+- [https://www.proxmox.com/en/downloads](https://www.proxmox.com/en/downloads)
