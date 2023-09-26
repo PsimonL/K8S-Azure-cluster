@@ -1,4 +1,5 @@
-# K8S cluster with Cloud provider - Azure/AWS
+# K8S cluster with Cloud provider - Azure
+Analogical steps at GCP, AWS.
 ## Overview
 
 ### Steps:
