@@ -6,4 +6,4 @@ provider "kubernetes" {
   cluster_ca_certificate = var.cluster_ca_certificate
 }
 
-# TODO: deployments of some things
+# TODO: copy and paste K8S objects
