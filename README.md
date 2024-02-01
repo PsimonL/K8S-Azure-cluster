@@ -20,30 +20,4 @@ SUBSCRIPTION_ID=<...>
 ### Description
 cluster_setup and ontop_setup are child modules
 
-
-
-## Resources and materials used for each cloud provider:
-### Terraform tutorials which I based cluster on:
-- https://developer.hashicorp.com/terraform?product_intent=terraform
-- https://www.youtube.com/watch?v=l5k1ai_GBDE
-- https://www.youtube.com/watch?v=GSXx8AZjKK4
-- https://www.youtube.com/watch?v=SPcwo0Gq9T8
-- https://www.youtube.com/watch?v=7xngnjfIlK4
-- https://www.youtube.com/watch?v=SLB_c_ayRMo
-- https://www.youtube.com/watch?v=bHjS4xqwc9A
-
-
-### Azure:
-- https://www.youtube.com/watch?v=bHjS4xqwc9A
-- https://learn.microsoft.com/en-us/azure/aks/learn/quick-kubernetes-deploy-terraform?tabs=azure-cli
-- https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/kubernetes_cluster
-- https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/guides/azure_cli
-
-
 *AWS become not available because student account granted by university run out of license validity period.*
-### AWS:
-- https://www.youtube.com/watch?v=p6xDCz00TxU
-- https://www.youtube.com/watch?v=LhAyqaZwYKE
-- https://www.youtube.com/watch?v=7wRqtBMS6E0
-- https://github.com/terraform-aws-modules/terraform-aws-eks
-- https://www.youtube.com/watch?v=nIIxexG7_a8&list=PLiMWaCMwGJXkeBzos8QuUxiYT6j8JYGE5&index=2
